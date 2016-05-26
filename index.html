@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='http://steatite.hypertopic.org/stylesheet.css' />  
+</head>
+<body>
+<h1>Vitraux de Troyes</h1>
+<h2>Parcours "<span id="topic"></span>"</h2>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script>
+$.ajax({
+  url: 'http://argos2.hypertopic.org/topic/56e092d8a6179a788c74b618b29801c0/f1520229979b11428f94a004f880c022',
+  dataType: 'json',
+  success: function(data) {
+    for (var r of data.rows) {
+      if (r.value.item) {
+        var picture_id = r.value.item.id;
+        $('body').append('<div class="picture" id="'+picture_id+'"/>');
+      } else if (r.value.name) {
+        $('#topic').text(r.value.name);
+      }
+    }
+    $.ajax({
+      url: 'http://steatite.hypertopic.org/corpus/Vitraux - Bénel',
+      dataType: 'json',
+      success: function(data) {
+        for (var s of data.rows) {
+          if (s.value.thumbnail) {
+            $('#'+s.key[1]).append('<img src="'+s.value.thumbnail+'" />');
+          }
+        }
+      }
+    });
+    $.ajax({
+      url: 'http://argos2.hypertopic.org/corpus/Vitraux - Bénel',
+      dataType: 'json',
+      success: function(data) {
+        for (var s of data.rows) {
+          if (s.value.spatial) {
+            $('#'+s.key[1]).append('<div><a href="https://www.google.fr/maps/place/'+s.value.spatial+'">'+s.value.spatial+'</a></div>');
+          }
+        }
+      }
+    });
+
+  }
+});
+</script>
+</body>
+</html>
