@@ -7,7 +7,7 @@ feature 'Commenter un vitrail' do
     click_on 'Vitraux indéterminés'
     click_on 'SNZ 104'
     click_on 'Boîte de dialogue vide'
-    write 'mon super commentaire'
+    fill_in 'Commentaire', :with => 'mon super commentaire'
     click_on 'Envoyer'
     expect(page).to have_content 'mon super commentaire'
   end
