@@ -8,7 +8,7 @@ Application Facebook permettant aux experts des vitraux de Troyes de collaborer.
 - Les données: http://argos2.hypertopic.org/corpus/Vitraux%20-%20B%C3%A9nel (joli: https://gist.github.com/66113f278f9ab476dafb1ab8f939bbd7)
 - Le Wordpress: https://experddesvitraux.wordpress.com
   - Utilisateur: `dorianma`
-  - Mot de passe: `dorian@doma.iodorian@doma.io`
+  - Mot de passe: [Demander à Dorian :D]
 - Poc Etienne :
   - Github: https://github.com/etiennej70/Vitraux-expert-app
   - https://vitraux-experts.dev.etiennejacquot.com
