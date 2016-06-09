@@ -10,4 +10,4 @@ Application Facebook permettant aux experts des vitraux de Troyes de collaborer.
   - Mot de passe: `dorian@doma.iodorian@doma.io`
 - Poc Etienne :
   - Github: https://github.com/etiennej70/Vitraux-expert-app
-  - vitraux-experts.dev.etiennejacquot.com
+  - https://vitraux-experts.dev.etiennejacquot.com
