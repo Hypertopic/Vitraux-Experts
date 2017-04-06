@@ -23,4 +23,4 @@ Quand Pierre clique sur l'outil de modifications
 Et ajoute des informations sur le vitrail
 Et qu'il confirme les changements réalisés
 Alors le contenu ajouté est associé au vitrail
-Et s'affiche lors de l'affichage de celui-ci
+Et s'affiche lors de l'affichage de celui-ci 
