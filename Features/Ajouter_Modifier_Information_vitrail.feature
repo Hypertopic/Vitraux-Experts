@@ -1,6 +1,8 @@
 #language: FR
 
-Fonctioonnalité: Ajouter / Modifier les informations d'un vitrail
+Fonctionnalité: Ajouter / Modifier les informations d'un vitrail
+	Pierre sera dans cette fonctionnalité un utilisateur lambda. 
+	L'ajout ou la modifications pouvant être réalisée par tout le monde comme c'est fait pour wikipédia.
 
 Scénario: Ajouter des informations à un vitrail
 
