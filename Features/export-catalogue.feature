@@ -1,6 +1,4 @@
 #language: fr
-
-
 Fonctionnalité: Exporter l'ensemble des participations sous forme de catalogue
 
 L'utilisateur créé un export présentant ses participations :
