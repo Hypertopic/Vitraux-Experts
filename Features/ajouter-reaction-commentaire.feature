@@ -6,6 +6,6 @@ Fonctionnalité: Mettre en avant un commentaire
 Scénario: Mise en avant réussie 
 	Etant donné que je suis un doctorant
 	Et que je consulte les commentaires d'un vitrail
-	Quand je décide de mettre en avant le commentaire d'un membre
+	Quand je mets en avant le commentaire d'un membre
 	Alors un élément indique que le commentaire a reçu une mise en avant
 
