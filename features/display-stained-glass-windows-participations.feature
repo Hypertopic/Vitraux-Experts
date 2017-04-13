@@ -17,4 +17,4 @@ Scénario:
 	Etant donné que je veux me renseigner sur une source dans la desciption d'un vitrail
 	Quand je demande à voir les modifications d'une source
 	Alors l'historique des modifications est affiché
-	et j'ai accès à la personne qui a ajouté la source
+	Et j'ai accès à la personne qui a ajouté la source
