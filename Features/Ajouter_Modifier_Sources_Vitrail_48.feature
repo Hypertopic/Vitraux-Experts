@@ -8,7 +8,7 @@ Scénario: Ajouter des sources à un vitrail
 
 Etant donné que Pierre identifie un vitrail manquant de sources
 Et qu'il dispose de sources vérifiées concernant celui-ci
-Quand Pierre clique sur l'outil de modifications
+Quand Pierre clique sur l'icone de modifications
 Et ajoute des sources sur le vitrail
 Et qu'il confirme les changements réalisés
 Alors les sources ajoutés sont associées au vitrail
@@ -19,7 +19,7 @@ Scénario: Modifier les sources d'un vitrail
 
 Etant donné que Pierre identifie un vitrail ayant des sources incorrectes
 Et qu'il dispose de sources vérifiées concernant celui-ci
-Quand Pierre clique sur l'outil de modifications
+Quand Pierre clique sur l'icone de modifications
 Et ajoute des sources sur le vitrail
 Et qu'il confirme les changements réalisés
 Alors les sources ajoutées sont associées au vitrail
