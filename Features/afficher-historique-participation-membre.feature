@@ -1,4 +1,4 @@
-﻿#language: Fr
+﻿# language: fr
 Fonctionnalité: Afficher l'historique des participations d'un membre
 	
 	En tant que doctorant,

@@ -1,26 +1,26 @@
 #language: fr
 
-Fonctionnalité: Ajouter  Modifier les informations d'un vitrail
-	Pierre sera dans cette fonctionnalité un utilisateur lambda. 
-	L'ajout ou la modifications pouvant être réalisée par tout le monde comme c'est fait pour wikipédia.
+FonctionnalitÃ©: Ajouter  Modifier les informations d'un vitrail
+	Pierre sera dans cette fonctionnalitÃ© un utilisateur lambda. 
+	L'ajout ou la modifications pouvant Ãªtre rÃ©alisÃ©e par tout le monde comme c'est fait pour wikipÃ©dia.
 
-Scénario: Ajouter des informations à un vitrail
+ScÃ©nario: Ajouter des informations Ã  un vitrail
 
-Etant donné que Pierre identifie un vitrail manquant d'informations
-Et qu'il dispose d'informations vérifiées concernant celui-ci
+Etant donnÃ© que Pierre identifie un vitrail manquant d'informations
+Et qu'il dispose d'informations vÃ©rifiÃ©es concernant celui-ci
 Quand Pierre clique sur l'icone de modifications
 Et ajoute des informations sur le vitrail
-Et qu'il confirme les changements réalisés
-Alors le contenu ajouté est associé au vitrail
+Et qu'il confirme les changements rÃ©alisÃ©s
+Alors le contenu ajoutÃ© est associÃ© au vitrail
 Et s'affiche lors de l'affichage de celui-ci
 
 
-Scénario: Modifier les informations d'un vitrail
+ScÃ©nario: Modifier les informations d'un vitrail
 
-Etant donné que Pierre identifie un vitrail ayant des informations incorrectes
-Et qu'il dispose d'informations vérifiées concernant celui-ci
+Etant donnÃ© que Pierre identifie un vitrail ayant des informations incorrectes
+Et qu'il dispose d'informations vÃ©rifiÃ©es concernant celui-ci
 Quand Pierre clique sur l'icone de modifications
 Et ajoute des informations sur le vitrail
-Et qu'il confirme les changements réalisés
-Alors le contenu ajouté est associé au vitrail
+Et qu'il confirme les changements rÃ©alisÃ©s
+Alors le contenu ajoutÃ© est associÃ© au vitrail
 Et s'affiche lors de l'affichage de celui-ci
