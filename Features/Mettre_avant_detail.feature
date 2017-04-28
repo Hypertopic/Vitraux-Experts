@@ -4,7 +4,7 @@ Fonctionnalité: Mettre en avant les détails / zones de vitraux non documentés
 	En tant que membre,
 	Je veux mettre en avant un détail particulier sur une partie d'un vitrail
 
-Scénario: le membre est connecté
+Scénario: Mettre en avant un détail
 
 	Etant donné que je suis sur un vitrail
 	Quand je sélectionne une zone d'un vitrail
