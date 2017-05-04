@@ -1,15 +1,12 @@
-Etantdonnéque(/^je suis un doctorant$/) do
+
+Étantdonnéque(/^Bob, doctorant, souhaite connaitre les informations associées à un vitrail$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Etantdonnéque(/^je suis sur le profil d'un membre$/) do
+Quand(/^il clique sur un vitrail$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Quand(/^j'affiche l'historique du membre$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Alors(/^une page s'ouvre avec la liste des contributions du membre$/) do
+Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le vitrail \(Lieu, Photographe, Date, Artiste, etc \.\.\.\) et les commentaires associés à celui\-ci\.$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
