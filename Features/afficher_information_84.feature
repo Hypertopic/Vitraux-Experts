@@ -1,7 +1,7 @@
 #language: fr
 Fonctionnalité: Afficher les informations associées à un vitrail
 
-L'utilisateur affiche les informations associés à vitrail (Lieu, Date, Technique du verre, Artiste, ...)
+L'utilisateur affiche les informations associées à un vitrail (Lieu, Date, Technique du verre, Artiste, ...)
 
 Scénario: Affichage des information d'un vitrail
 
