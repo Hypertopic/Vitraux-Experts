@@ -317,3 +317,36 @@ end
 Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le vitrail \(Lieu, Photographe, Date, Artiste, etc \.\.\.\) et les commentaires associés à celui\-ci\.$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+
+Etantdonnéque(/^je suis connecté$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Etantdonnéque(/^je possède les informations nécessaires pour ajouter un vitrail sur la plateforme$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quand(/^je vais sur la page pour ajouter un nouveau vitrail$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quand(/^je saisi ses informations puis valide$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Alors(/^le vitrail se trouve ajouté à la base de données$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Etantdonnéque(/^je ne possède que la photo d'un vitrail$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quand(/^j'envoie la photo puis valide$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Alors(/^un message m'indique qu'il manque des informations pour pouvoir ajouter le vitrail$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
