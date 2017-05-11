@@ -304,3 +304,16 @@ end
 Alors(/^on lui génère un fichier éditable contenant ses participations personnelles, contenant ses ajouts de références, de tags, d'informations, ses commentaires et ses participtions au débats, qu'il pourra télécharger et enregistrer sur son ordinateur\.$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+
+Étantdonnéque(/^Bob, doctorant, souhaite connaitre les informations associées à un vitrail$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Quand(/^il clique sur un vitrail$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
+Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le vitrail \(Lieu, Photographe, Date, Artiste, etc \.\.\.\) et les commentaires associés à celui\-ci\.$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
