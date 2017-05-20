@@ -2,59 +2,65 @@
 # Pour l'instant j'ai fais un copié-collé pour mettre tout ici, mais cucumber dira rapidement que certaines entrée sont dupliquées (ambigües)
 
 Etantdonnéque(/^Pierre a listé les vitraux$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	visit '/'
 end
 
 Etantdonnéque(/^il souhaite ajouter un nouveau tag pour un vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	expect(page).to have_content 'Les vitraux'
 end
 
 Quand(/^il clique sur le vitrail cible$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	click_link 'id_vitrail'
 end
 
-Quand(/^clique sur le bouton "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Quand(/^clique sur le bouton "([^"]*)"$/) do |ajouterNouveauTag|
+	click_button ajouterNouveauTag
 end
 
 Quand(/^renseigne la description du nouveau tag$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	fill_in 'titre_tag_input', :with => "TAG"
+	fill_in 'description_input', :with => "description"
+	click_button 'id_button_valider'
 end
 
 Alors(/^le nouveau tag est bien créé$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	page.should have_content('Le tag est bien créé')
 end
 
 Alors(/^il est bien associé au vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	page.should have_content('TAG')
 end
 
 Etantdonnéque(/^il souhaite ajouter un tag existant pour un vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	visit '/'
+	expect(page).to have_content 'Les vitraux'
+	click_link 'id_vitrail'
 end
 
 Quand(/^séléctionne un tag existant de la liste$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	select('tag_option', :from => 'id_liste')
 end
 
 Alors(/^le tag séléctionné est bien associé au vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	page.should have_content('Le tag est bien associé')
 end
 
 Etantdonnéque(/^il souhaite modifier un tag pour un vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	visit '/'
+	expect(page).to have_content 'Les vitraux'
+	click_link 'id_vitrail'
 end
 
 Quand(/^clique sur liste des tags$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	click_button 'modifier_liste_tags'
 end
 
 Quand(/^séléctionne l'option \(\-\) pour enlever un tag$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	click_button 'id_enlever_button_tag'
 end
 
 Alors(/^le tag séléctionné est bien dissocié du vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	page.should have_content('Le tag est bien enlevé')
 end
 
 Etantdonnéque(/^Pierre identifie un vitrail manquant d'informations$/) do
@@ -468,4 +474,3 @@ end
 Alors(/^le vitrail Tiffany est affiché$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
-
