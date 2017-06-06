@@ -5,6 +5,6 @@ Fonctionnalité: Consulter la liste des vitraux
 
 Scénario: Utilisateur
 
-Etant donné que je vois la liste des vitraux
-Quand je clique sur le bouton "Accueil"
-Alors le site me renvoit la liste de tous les vitraux
+Etant donné que je suis sur le site
+Quand je clique sur le lien "Liste des vitraux"
+Alors le site affiche la liste des vitraux

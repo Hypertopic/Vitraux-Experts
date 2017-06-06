@@ -1,3 +1,6 @@
 require 'capybara/cucumber'
 
-Capybara.default_driver = :selenium
+Capybara.configure do |config|
+  config.default_driver = :selenium
+  config.app_host = 'http://localhost:8888/UTT/if05'
+end
