@@ -472,7 +472,7 @@ Etantdonnéque(/^je suis sur le site$/) do
 end
 
 Quand(/^je clique sur le lien "([^"]*)"$/) do |arg1|
-  puts click_link arg1
+  click_link arg1
 end
 
 Alors(/^le site affiche la liste des vitraux$/) do
