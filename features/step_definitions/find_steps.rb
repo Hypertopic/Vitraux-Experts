@@ -171,14 +171,6 @@ Alors(/^me les classe par interaction avec les visiteurs \(nombre de vue, commen
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Etantdonnéque(/^je vois la liste des vitraux$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Alors(/^le site me renvoit la liste de tous les vitraux$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
 Etantdonnéque(/^je suis un doctorant$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
@@ -304,7 +296,7 @@ Alors(/^le commentaire recoit une nouvelle réaction négative qui s'affiche sou
 end
 
 Etantdonnéque(/^je suis connecté$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  
 end
 
 Etantdonnéque(/^je possède les informations nécessaires pour ajouter un vitrail sur la plateforme$/) do
@@ -473,4 +465,16 @@ end
 
 Alors(/^le vitrail Tiffany est affiché$/) do
   pending # Write code here that turns the phrase above into concrete actions
+end
+
+Etantdonnéque(/^je suis sur le site$/) do
+  visit "/"
+end
+
+Quand(/^je clique sur le lien "([^"]*)"$/) do |arg1|
+  click_link arg1
+end
+
+Alors(/^le site affiche la liste des vitraux$/) do
+  
 end
