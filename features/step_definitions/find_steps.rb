@@ -476,5 +476,7 @@ Quand(/^je clique sur le lien "([^"]*)"$/) do |arg1|
 end
 
 Alors(/^le site affiche la liste des vitraux$/) do
-  
+  page.has_content?('ABT')
+  page.has_content?('ACS')
+  page.has_content?('AL')
 end
