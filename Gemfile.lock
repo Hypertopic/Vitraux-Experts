@@ -65,7 +65,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (~> 2.14.0)
   cucumber (~> 2.4.0)
-  pry (~> 0.10.4)
+  pry (~> 0.10.3)
   selenium-webdriver (~> 3.4.0)
 
 BUNDLED WITH
