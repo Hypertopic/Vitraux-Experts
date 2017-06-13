@@ -486,5 +486,5 @@ Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le
   page.has_content?('7 Fi 35')
   page.has_content?('Les larrons')
   page.has_content?('ABT')
-  page.has_content?('Histoire de l''art')
+  page.has_content?("Histoire de l'art")
 end
