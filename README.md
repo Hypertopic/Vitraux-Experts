@@ -76,7 +76,22 @@ Lien MyBalsamic :
 	https://github.com/Hypertopic/Vitraux-Experts
 - Les données: 
 	http://argos2.hypertopic.org/corpus/Vitraux%20-%20B%C3%A9nel (joli: https://gist.github.com/66113f278f9ab476dafb1ab8f939bbd7)
-- P17 : le backend : 
+
+--------------------
+--------------------
+
+- P16 Le Wordpress: https://experddesvitraux.wordpress.com
+  - Utilisateur: `dorianma`
+  - Mot de passe: [Demander à Dorian :D]
+- P16 Poc Etienne :
+  - Github: https://github.com/etiennej70/Vitraux-expert-app
+  - http://vitraux-experts.dev.etiennejacquot.com/
+  - http://vitraux-experts.dev.etiennejacquot.com/fiche.php?vitrail=ID
+
+--------------------
+--------------------
+
+  - P17 : le backend : 
 	https://github.com/Shyked/Vitraux-Experts-dev
 
 Fonctionnals Test ok API REST in directory of the project backend
@@ -90,16 +105,4 @@ required jasmine :
 
 Run the test : 
 	jasmine-node descriptions/tests
-
-
---------------------
---------------------
-
-- P16 Le Wordpress: https://experddesvitraux.wordpress.com
-  - Utilisateur: `dorianma`
-  - Mot de passe: [Demander à Dorian :D]
-- P16 Poc Etienne :
-  - Github: https://github.com/etiennej70/Vitraux-expert-app
-  - http://vitraux-experts.dev.etiennejacquot.com/
-  - http://vitraux-experts.dev.etiennejacquot.com/fiche.php?vitrail=ID
 
