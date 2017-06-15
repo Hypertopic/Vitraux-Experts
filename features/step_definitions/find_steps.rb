@@ -187,6 +187,27 @@ Alors(/^une page s'ouvre avec la liste des contributions du membre$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
+Étantdonnéque(/^je suis "([^"]*)"$/) do |arg1|
+  # TODO connection
+end
+
+Étantdonnéque(/^je suis sur la page "([^"]*)"$/) do |arg1|
+  visit arg1
+end
+
+Quand(/^je clique sur un vitrail$/) do
+  all('a[href*="/item/"]', {
+    :minimum => 1,
+    :wait => 10
+  }).first.click
+end
+
+Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le vitrail \(Lieu, Photographe, Date, Artiste, etc \.\.\.\) et les commentaires associés à celui\-ci\.$/) do
+  find(".Description")
+  find(".Subject")
+  find(".Disclaimer")
+  find(".Sources")
+end
 
 Etantdonnéque(/^Kevin veut ajouter un commentaire sur un vitrail$/) do
   pending # Write code here that turns the phrase above into concrete actions
