@@ -7,12 +7,11 @@ Fonctionnalité: Ajouter un commentaire sur un vitrail
 
 Scénario: Ajouter un commentaire
 
-	Etant donné que Kevin veut ajouter un commentaire sur un vitrail
-	Et qu'il est sur la page des informations du vitrail
-	Quand il saisit du texte dans le champs commentaire
-	Et qu'il clique sur le bouton valider
-	Alors le commentaire est ajouté au vitrail
-	Et s'affiche lors de l'affichage de celui-ci
+	Etant donné que je suis sur la page des informations du vitrail
+	Quand je saisis "Kevin" dans le champ pseudo
+	Et que je saisis "Lorem Ipsum" dans le champ commentaire
+	Et que je clique sur le bouton "Valider"
+	Alors le commentaire s'affiche avec le pseudo "Kevin" et le commentaire "Lorem Ipsum"
 
 Scénario: Modifier un commentaire
 
