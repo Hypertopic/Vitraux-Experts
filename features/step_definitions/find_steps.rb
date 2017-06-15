@@ -132,7 +132,7 @@ Etantdonnéque(/^je souhaite ajouter des informations sur les bâtiments que je 
 end
 
 Quand(/^je clique sur le bouton "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+  click_button(arg1)
 end
 
 Alors(/^le site me renvoit une liste de vitraux indéterminés$/) do
@@ -209,25 +209,27 @@ Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le
   find(".Sources")
 end
 
-Etantdonnéque(/^Kevin veut ajouter un commentaire sur un vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+
+
+
+Etantdonnéque(/^je suis sur la page des informations du vitrail$/) do
+  visit "/item/Vitraux%20-%20Recensement/a56aa07e9e03c5fca2048bc6ab0b922578b405cc"
 end
 
-Etantdonnéque(/^il est sur la page des informations du vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Quand(/^je saisis "([^"]*)" dans le champ pseudo$/) do |arg1|
+  find(:css, 'form.CommentForm input[type=text]').set(arg1)
 end
 
-Quand(/^il saisit du texte dans le champs commentaire$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Quand(/^je saisis "([^"]*)" dans le champ commentaire$/) do |arg1|
+  find(:css, 'form.CommentForm textarea').set(arg1)
 end
 
-Quand(/^il clique sur le bouton valider$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+Alors(/^le commentaire s'affiche avec le pseudo "([^"]*)" et le commentaire "([^"]*)"$/) do |arg1, arg2|
+  all('.CommentList .Comment .Author').last.has_content?(arg1)
+  all('.CommentList .Comment .CommentText .CommentContent p').last.has_content?(arg2)
 end
 
-Alors(/^le commentaire est ajouté au vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
+
 
 Etantdonnéque(/^Kevin veut modifier un commentaire sur un vitrail$/) do
   pending # Write code here that turns the phrase above into concrete actions
