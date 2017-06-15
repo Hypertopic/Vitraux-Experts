@@ -187,17 +187,6 @@ Alors(/^une page s'ouvre avec la liste des contributions du membre$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Etantdonnéque(/^Bob, doctorant, souhaite connaitre les informations associées à un vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Quand(/^il clique sur un vitrail$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le vitrail \(Lieu, Photographe, Date, Artiste, etc \.\.\.\) et les commentaires associés à celui\-ci\.$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
 
 Etantdonnéque(/^Kevin veut ajouter un commentaire sur un vitrail$/) do
   pending # Write code here that turns the phrase above into concrete actions
@@ -479,4 +468,23 @@ Alors(/^le site affiche la liste des vitraux$/) do
   page.has_content?('ABT')
   page.has_content?('ACS')
   page.has_content?('AL')
+end
+
+
+
+Etantdonnéque(/^Bob, doctorant, souhaite connaitre les informations associées à un vitrail$/) do
+      visit "/"
+	   page.has_content?('ABT')
+end
+
+Quand(/^il clique sur un vitrail$/) do
+    visit "/item/Vitraux%20-%20Recensement/2634f0347b19655bb3032163d7af2cfb3094325a"
+  #http://localhost:3000/item/Vitraux%20-%20Recensement/2634f0347b19655bb3032163d7af2cfb3094325a
+end
+
+Alors(/^la page du vitrail s'ouvre avec sa photo, des informations concernant le vitrail \(Lieu, Photographe, Date, Artiste, etc \.\.\.\) et les commentaires associés à celui\-ci\.$/) do
+  page.has_content?('7 Fi 35')
+  page.has_content?('Les larrons')
+  page.has_content?('ABT')
+  page.has_content?("Histoire de l'art")
 end
