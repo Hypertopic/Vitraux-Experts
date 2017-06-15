@@ -32,11 +32,11 @@ class Corpora extends Component {
   componentDidMount() {
     this._timer = setInterval(
       () => this._fetchItems(),
-      15000
+      60000
     );
     var search = document.getElementById('search');
     search.addEventListener('keydown', (e) => {
-      if (e.keyCode == 13) this._fetchItems();
+      if (e.keyCode === 13) this._fetchItems();
     });
   }
 
@@ -70,7 +70,7 @@ class Corpora extends Component {
               console.log(itemId, "has no name or thumbnail!", item);
             } else {
               if (param !== ""){
-                if (typeof item.spatial == "undefined"){
+                if (typeof item.spatial === "undefined"){
                   if (item.name[0].toLowerCase().indexOf(param) >= 0){
                     item.id = itemId;
                     item.corpus = corpus;

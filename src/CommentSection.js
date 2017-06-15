@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Reaction from './Reaction';
 
 //Contient toute la partie commentaires
 class CommentBox extends React.Component {
@@ -62,7 +63,8 @@ class CommentBox extends React.Component {
         body: JSON.stringify(data)
       })
       .then(function(res){ console.log(res) })
-      .catch(function(res){ console.log(res) })
+      .catch(function(res){ console.log(res) });
+      this.loadCommentsFromServer();
 
     }
 
@@ -127,7 +129,10 @@ class CommentBox extends React.Component {
     render() {
         var commentNodes = this.props.data.map(function (comment) {
           return (
-            <Comment key={comment.id} author={comment.user} text={comment.text} date={comment.date}/>
+            <div>
+              <Comment key={comment.id} commentId={comment.id} author={comment.user} text={comment.text} date={comment.date}/>
+              <Reaction commentId={comment.id} likes={comment.cpt_like} dislikes={comment.cpt_dislike} />
+            </div>
           );
         });
         return (
@@ -139,6 +144,10 @@ class CommentBox extends React.Component {
   }
 
   class Comment extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
     render() {
       return (
         <div className="Comment">
