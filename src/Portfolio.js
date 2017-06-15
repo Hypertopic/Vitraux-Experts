@@ -4,7 +4,7 @@ import Hypertopic from 'hypertopic';
 import conf from './config.json';
 import Viewpoint from './Viewpoint';
 import Corpora from './Corpora';
-import Header from './Header.js';
+import SearchBar from './SearchBar.js';
 
 import './App.css';
 
@@ -21,12 +21,19 @@ class Portfolio extends Component {
     const corpora = this._getCorpora();
     return (
       <div className="App">
-        <Header link="./user_icone.png"/>
-        <div ></div>
-          <div className="App-content">
-            {corpora}
+        <div className="Nav">
+          <div className="Title">
+            <h1><a href="/" >Accueil</a></h1>
+          </div>
+          <SearchBar />
+          <div className="Image">
+            <img src="./user_icone.png" alt="icone utilisateur"/>
           </div>
         </div>
+        <div className="App-content">
+          {corpora}
+        </div>
+      </div>
     );
   }
 

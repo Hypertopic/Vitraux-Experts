@@ -1,7 +1,3 @@
-# Projet IF05
-
-Application permettant aux experts des vitraux de Troyes de collaborer.
-
 PORPHYRY – Corpus analyses confrontation
 ========================================
 
